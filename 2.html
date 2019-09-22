@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  a {
+    color:black;
+    text-decoration:none;
+  }
+
+  h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  h2{
+    padding-top: 30px;
+    padding-left: 20px;
+    width:50px;
+    height: 50px;
+    margin: 0;
+  }
+
+#grid{
+  display: grid;
+  grid-template-columns: 150px 100px 1fr;
+}
+
+.color{
+  color:red;
+}
+
+@media(max-width:750px){
+  h1 {
+  border-bottom:none;
+  }
+  ol{
+    border-right:none;
+  }
+  #grid{
+    display: block;
+  }
+
+
+}
+
+
+</style>
+</head>
+
+<body>
+  <h1><a href="index.html" title="WEB"> WEB-CSS </a></h1>
+
+<div id="grid">
+
+<ol>
+<li><a href="1.html" target="_blank" title="1.html">HTML</a></li>
+<li><a href="2.html" target="_blank" title="2.CSS" class="color">CSS</a></li>
+<li><a href="3.html" target="_blank" title="3.JavaScript" >JAVA SCRIPT</a></li>
+</ol>
+
+<div>
+  <h2>*CSS</h2>
+</div>
+
+<div>
+<p>예전의 HTML은 디자인이 없었지만 CSS의 탄생으로 인해 웹페이지에 디자인을 넣는게 가능해졌음 웹페이지 입장에서
+어떤 언어가 CSS가 무엇인지 구분하기 위해서 두가지 방법이 있음. 두 가지 모두 style 태그를 사용한다.</p>
+<p> 1. Style 효과와 선택자 사용. <br>
+style
+  a {
+    color:black;  <ㅡㅡㅡㅡㅡ color black 은 효과(선언,declation) 라고 한다.
+  }                          여기서 효과만 있어서는 어떤곳에 css 속성을 입힐지 모르니깐 a {}라는 선택자가 같이 사용된다.
+</p>
+
+<p>2.Style 효과만 사용 <br>
+
+(li) (a href="2.html" target="_blank" title="2.html" style=color:red) CSS (/a) (/li)
+여기서는 선택자가 없어도 어디에 적용할지 알수 있기 때문에 style 효과만 사용한다.<p>
+</div>
+</div>
+</body>
+</html>
